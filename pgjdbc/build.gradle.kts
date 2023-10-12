@@ -172,6 +172,7 @@ val generateGettextSources by tasks.registering {
 }
 
 tasks.compileJava {
+    options.release = 11
     if (enableGettext) {
         dependsOn(generateGettextSources)
     } else {
@@ -248,7 +249,7 @@ val osgiJar by tasks.registering(Bundle::class) {
             Bundle-SymbolicName: org.postgresql.jdbc
             Bundle-Name: PostgreSQL JDBC Driver
             Bundle-Copyright: Copyright (c) 2003-2020, PostgreSQL Global Development Group
-            Require-Capability: osgi.ee;filter:="(&(|(osgi.ee=J2SE)(osgi.ee=JavaSE))(version>=1.8))"
+            Require-Capability: osgi.ee;filter:="(&(|(osgi.ee=J2SE)(osgi.ee=JavaSE))(version>=11))"
             Provide-Capability: osgi.service;effective:=active;objectClass=org.osgi.service.jdbc.DataSourceFactory;osgi.jdbc.driver.class=org.postgresql.Driver;osgi.jdbc.driver.name=PostgreSQL JDBC Driver
             """
         )

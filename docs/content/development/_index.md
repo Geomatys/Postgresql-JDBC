@@ -12,7 +12,7 @@ The PostgreSQL JDBC driver has some unique properties that you should be aware o
 
 The following tools are required to build and test the driver:
 
-* [Java 8 Standard Edition Development Kit](https://java.oracle.com) At least JDK 1.8
+* [Java 8 Standard Edition Development Kit](https://java.oracle.com) At least JDK 11
 * [Gradle](https://gradle.org) At least 7.5
 * [Git SCM](https://git-scm.com)
 * [A PostgreSQL instance](https://www.postgresql.org) to run the tests.

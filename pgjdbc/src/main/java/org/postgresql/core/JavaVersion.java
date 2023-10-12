@@ -7,7 +7,13 @@ package org.postgresql.core;
 
 public enum JavaVersion {
   // Note: order is important,
+
+  /**
+   * @deprecated Java 1.8 is not supported anymore.
+   */
+  @Deprecated
   v1_8,
+
   other;
 
   private static final JavaVersion RUNTIME_VERSION = from(System.getProperty("java.version"));
@@ -29,9 +35,6 @@ public enum JavaVersion {
    * @return JavaVersion enum
    */
   public static JavaVersion from(String version) {
-    if (version.startsWith("1.8")) {
-      return v1_8;
-    }
     return other;
   }
 }

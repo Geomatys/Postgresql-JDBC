@@ -27,8 +27,8 @@
     </organization>
 
     <properties>
-        <!-- Require JDK 1.8 or later -->
-        <javac.target>1.8</javac.target>
+        <!-- Require JDK 11 or later -->
+        <javac.target>11</javac.target>
         <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>

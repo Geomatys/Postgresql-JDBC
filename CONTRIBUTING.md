@@ -158,7 +158,7 @@ For fields that have already been checked against null, use `@RequiresNonNull`.
 or `org.postgresql.util.internal.Nullness.castNonNull(T, String)`.
 
 * You can configure postfix completion in IntelliJ IDEA via `Preferences -> Editor -> General -> Postfix Completion`
-key: `cnn`, applicable element type: `non-primitive`, `org.postgresql.util.internal.Nullness.castNonNull($EXPR$)`.  
+key: `cnn`, applicable element type: `non-primitive`, `org.postgresql.util.internal.Nullness.castNonNull($EXPR$)`.
 
 * The Checker Framework comes with an annotated JDK, however, there might be invalid annotations.
 In that cases, stub files can be placed to `/config/checkerframework` to override the annotations.
@@ -182,7 +182,7 @@ This is explained in the [Java Language Specification](https://docs.oracle.com/j
         @Nullable String[] x;
 
         // array: nullable, elements: nullable
-        @Nullable String @Nullable [] x;  
+        @Nullable String @Nullable [] x;
 
         // arrays: nullable, elements: nullable
         // x: non-nullable
@@ -308,8 +308,8 @@ https://guides.github.com/introduction/flow/.
 Remember to test proposed PgJDBC patches when running against older PostgreSQL
 versions where possible, not just against the PostgreSQL you use yourself.
 
-You also need to test your changes with older JDKs. PgJDBC must support JDK8
-("Java 1.8") and newer.
+You also need to test your changes with older JDKs. PgJDBC must support JDK11
+("Java 11") and newer.
 
 You can get old JDK versions from the [Oracle Java Archive](http://www.oracle.com/technetwork/java/archive-139210.html).
 

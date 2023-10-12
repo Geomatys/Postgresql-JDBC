@@ -58,7 +58,7 @@ Source0:	https://repo1.maven.org/maven2/org/postgresql/postgresql/%{version}/pos
 Provides:	pgjdbc = %version-%release
 
 BuildArch:	noarch
-BuildRequires:	java-devel >= 1.8
+BuildRequires:	java-devel >= 11
 BuildRequires:	maven-local
 BuildRequires:	maven-plugin-bundle
 BuildRequires:	classloader-leak-test-framework
