@@ -59,7 +59,7 @@ Provides:	pgjdbc = %version-%release
 
 BuildArch:	noarch
 ExclusiveArch:  %{java_arches} noarch
-BuildRequires:	java-devel >= 1.8
+BuildRequires:	java-devel >= 11
 BuildRequires:	maven-local
 BuildRequires:	maven-bundle-plugin
 

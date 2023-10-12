@@ -248,8 +248,8 @@ https://guides.github.com/introduction/flow/.
 Remember to test proposed PgJDBC patches when running against older PostgreSQL
 versions where possible, not just against the PostgreSQL you use yourself.
 
-You also need to test your changes with older JDKs. PgJDBC must support JDK8
-("Java 1.8") and newer.
+You also need to test your changes with older JDKs. PgJDBC must support JDK11
+("Java 11") and newer.
 
 You can get old JDK versions from the [Oracle Java Archive](http://www.oracle.com/technetwork/java/archive-139210.html).
 
