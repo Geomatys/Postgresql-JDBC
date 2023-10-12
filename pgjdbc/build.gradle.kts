@@ -173,6 +173,8 @@ val generateGettextSources by tasks.registering {
 
 tasks.compileJava {
     options.release = 11
+    options.compilerArgs.add("--add-reads")
+    options.compilerArgs.add("org.postgresql.jdbc=ALL-UNNAMED")
     if (enableGettext) {
         dependsOn(generateGettextSources)
     } else {
