@@ -15,14 +15,13 @@ import org.postgresql.util.PSQLState;
 
 import org.checkerframework.checker.nullness.qual.Nullable;
 
-import java.awt.Point;
 import java.io.Serializable;
 import java.sql.SQLException;
 
 /**
  * It maps to the point datatype in org.postgresql.
  *
- * <p>This implements a version of java.awt.Point, except it uses double to represent the coordinates.</p>
+ * <p>It maps to the point datatype in org.postgresql.</p>
  */
 public class PGpoint extends PGobject implements PGBinaryObject, Serializable, Cloneable {
   /**
@@ -198,27 +197,13 @@ public class PGpoint extends PGobject implements PGBinaryObject, Serializable, C
   }
 
   /**
-   * Moves the point to the supplied coordinates. refer to java.awt.Point for description of this.
+   * Moves the point to the supplied coordinates.
    *
    * @param x integer coordinate
    * @param y integer coordinate
-   * @see java.awt.Point
    */
   public void setLocation(int x, int y) {
     move((double) x, (double) y);
-  }
-
-  /**
-   * Moves the point to the supplied java.awt.Point refer to java.awt.Point for description of this.
-   *
-   * @param p Point to move to
-   * @see java.awt.Point
-   *
-   * @deprecated Will be removed for avoiding a dependency to the {@code java.desktop} module.
-   */
-  @Deprecated(forRemoval = true)
-  public void setLocation(Point p) {
-    setLocation(p.x, p.y);
   }
 
   @Override

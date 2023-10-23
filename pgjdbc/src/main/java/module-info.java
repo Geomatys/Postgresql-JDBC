@@ -8,7 +8,6 @@
  */
 module org.postgresql.jdbc {
     requires transitive java.sql;
-    requires transitive java.desktop;               // Use for java.awt.Point
     requires transitive java.naming;
 
     requires java.management;
